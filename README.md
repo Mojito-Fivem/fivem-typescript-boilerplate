@@ -29,7 +29,7 @@ he has unfortunately passed away, leaving it unmaintained. This boilerplate is s
 a more up to date alternative.
 
 ## Requirements
-* Node > v14
+* Node > v16
 
 ## Getting Started
 
@@ -71,25 +71,6 @@ the `build` script.
 
 ```sh
 npm run build
-```
-### Automatic Builds (Optional)
-*This is not recommended as the embedded version of yarn is 
-ocassionally prone to performance and environment problems. We 
-highly recomend, you manually run the build script*
-
-If desired, the `fxmanifest.lua` can be setup to allow for
-FXServer to automatically build on resource start. This utilizes
-the embedded `yarn` & `webpack` default resources.
-
-To enable this, add the following to your `fxmanifest.lua`
-
-```lua
-dependency {
-    'yarn',
-    'webpack'
-}
-
-webpack_config 'webpack.config.js'
 ```
 
 ### Additional Notes
